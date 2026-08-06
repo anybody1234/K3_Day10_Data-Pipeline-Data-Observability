@@ -5,8 +5,8 @@
 - **source**: teammate_clean_data
 - **records_after_cleaning**: 24
 - **embedding_model**: sentence-transformers/all-MiniLM-L6-v2
-- **llm_provider**: openrouter
-- **llm_model**: google/gemini-2.5-flash
+- **llm_provider**: openai
+- **llm_model**: gpt-4o-mini
 
 ## 2. Evaluation Metrics
 
@@ -14,9 +14,9 @@
 |--------|-------|
 | `samples` | 18 |
 | `retrieval_hit_rate` | 1.0000 |
-| `mean_token_f1` | 0.1460 |
-| `judge_accuracy` | 0.0556 |
-| `mean_judge_score` | 1.1111 |
+| `mean_token_f1` | 0.1809 |
+| `judge_accuracy` | 0.6667 |
+| `mean_judge_score` | 3.5000 |
 
 > RAGAS: Set RUN_RAGAS=1 to enable the slower Ragas pass.
 
