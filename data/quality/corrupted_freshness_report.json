@@ -1,0 +1,9 @@
+{
+  "latest_published": "2026-07-02",
+  "oldest_published": "2022-11-12",
+  "stale_rows": 5,
+  "total_rows": 24,
+  "freshness_threshold_days": 180,
+  "is_fresh": false,
+  "reason": "5/24 records exceed 180-day threshold"
+}

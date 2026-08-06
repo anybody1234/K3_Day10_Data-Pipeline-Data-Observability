@@ -1,0 +1,51 @@
+{
+  "report_name": "repaired_quality",
+  "total_checks": 6,
+  "passed": 6,
+  "failed": 0,
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "row_count",
+      "dimension": "completeness",
+      "passed": true,
+      "expected": ">= 1",
+      "actual": 24
+    },
+    {
+      "check": "paper_id_not_null",
+      "dimension": "completeness",
+      "passed": true,
+      "expected": "0 nulls",
+      "actual": "0 nulls"
+    },
+    {
+      "check": "paper_id_unique",
+      "dimension": "uniqueness",
+      "passed": true,
+      "expected": "0 duplicates",
+      "actual": "0 duplicates"
+    },
+    {
+      "check": "title_not_null",
+      "dimension": "completeness",
+      "passed": true,
+      "expected": "0 null/empty",
+      "actual": "0 null/empty"
+    },
+    {
+      "check": "summary_not_empty",
+      "dimension": "completeness",
+      "passed": true,
+      "expected": "0 empty summaries",
+      "actual": "0 empty"
+    },
+    {
+      "check": "freshness",
+      "dimension": "timeliness",
+      "passed": true,
+      "expected": "0 rows older than 180 days",
+      "actual": "0 stale rows (0.0%)"
+    }
+  ]
+}

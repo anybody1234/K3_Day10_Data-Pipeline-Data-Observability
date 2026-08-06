@@ -64,6 +64,7 @@ def corrupt_clean_dataframe(df: pd.DataFrame, output_log_path) -> pd.DataFrame:
     drop_count = min(_count(rows_before, _DROP_LATEST_FRACTION, rows_before), max(0, rows_before - 1))
     dropped_ids = corrupted.iloc[:drop_count]["paper_id"].tolist()
     corrupted = corrupted.iloc[drop_count:].reset_index(drop=True)
+    print(f"  [1/6] Dropped {len(dropped_ids)} latest records")
 
     pool = list(corrupted.index)
     rng.shuffle(pool)
@@ -74,25 +75,30 @@ def corrupt_clean_dataframe(df: pd.DataFrame, output_log_path) -> pd.DataFrame:
 
     blank_ids = corrupted.loc[blank_idx, "paper_id"].tolist()
     corrupted.loc[blank_idx, "summary"] = ""
+    print(f"  [2/6] Blanked summary on {len(blank_ids)} records")
 
     noisy_ids = corrupted.loc[noisy_idx, "paper_id"].tolist()
     corrupted.loc[noisy_idx, "summary"] = [
         _inject_noise(text, rng) for text in corrupted.loc[noisy_idx, "summary"]
     ]
+    print(f"  [3/6] Injected noise into {len(noisy_ids)} summaries")
 
     truncated_ids = corrupted.loc[truncate_idx, "paper_id"].tolist()
     corrupted.loc[truncate_idx, "title"] = [
         _truncate(text, rng) for text in corrupted.loc[truncate_idx, "title"]
     ]
+    print(f"  [4/6] Truncated {len(truncated_ids)} titles")
 
     stale_ids = corrupted.loc[stale_idx, "paper_id"].tolist()
     stale_published_before = corrupted.loc[stale_idx, "published"].tolist()
     corrupted.loc[stale_idx, "published"] = [_stale_published(rng, run_date) for _ in stale_idx]
+    print(f"  [5/6] Made {len(stale_ids)} publication dates stale")
 
     dup_count = min(len(corrupted), max(1, round(rows_before * _DUPLICATE_FRACTION)))
     dup_idx = rng.sample(list(corrupted.index), dup_count) if dup_count else []
     duplicated_ids = corrupted.loc[dup_idx, "paper_id"].tolist()
     corrupted = pd.concat([corrupted, corrupted.loc[dup_idx]], ignore_index=True)
+    print(f"  [6/6] Duplicated {len(duplicated_ids)} rows")
 
     corrupted["summary_chars"] = corrupted["summary"].str.len()
     corrupted["text_for_embedding"] = (
@@ -101,8 +107,9 @@ def corrupt_clean_dataframe(df: pd.DataFrame, output_log_path) -> pd.DataFrame:
     pub_dt = pd.to_datetime(corrupted["published"], errors="coerce")
     corrupted["age_days"] = (run_date.replace(tzinfo=None) - pub_dt).dt.days
 
+    log_path = Path(output_log_path)
     write_json(
-        Path(output_log_path),
+        log_path,
         {
             "generated_at": run_date.isoformat(),
             "seed": _SEED,
@@ -122,4 +129,5 @@ def corrupt_clean_dataframe(df: pd.DataFrame, output_log_path) -> pd.DataFrame:
             },
         },
     )
+    print(f"  Corruption log -> {log_path}")
     return corrupted
