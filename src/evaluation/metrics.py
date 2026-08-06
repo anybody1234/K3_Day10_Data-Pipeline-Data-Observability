@@ -46,6 +46,7 @@ def _token_f1(reference: str, prediction: str) -> float:
 
 
 def _judge_answer(settings: Settings, question: str, reference: str, prediction: str) -> JudgeVerdict:
+    import json as _json
     prompt = f"""
 Evaluate the model answer against the reference answer.
 
@@ -53,14 +54,21 @@ Question: {question}
 Reference answer: {reference}
 Model answer: {prediction}
 
-Return:
-- score from 1 to 5
-- correct = true only when the answer is materially correct
-- short reasoning
+Return a JSON object with exactly these fields:
+- "score": integer from 1 to 5
+- "correct": true only when the answer is materially correct
+- "reasoning": short reasoning string
+
+Return ONLY valid JSON, no markdown fences.
 """.strip()
     try:
-        llm = build_llm(settings=settings, temperature=0.0).with_structured_output(JudgeVerdict)
-        return llm.invoke(prompt)
+        llm = build_llm(settings=settings, temperature=0.0)
+        response = llm.invoke(prompt, max_tokens=512)
+        text = response.content.strip()
+        if text.startswith("```"):
+            text = text.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+        data = _json.loads(text)
+        return JudgeVerdict(**data)
     except Exception:
         score = 5 if _token_f1(reference, prediction) >= 0.95 else 3 if _token_f1(reference, prediction) >= 0.5 else 1
         return JudgeVerdict(
