@@ -1,0 +1,362 @@
+[
+  {
+    "id": "q1",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'Retrieval-Augmented Generation (RAG), Generative AI, and Agentic AI Governance: An Integrated Enterprise Governance Prioritization Architecture'?",
+    "ground_truth": "Abstract Enterprise adoption of artificial intelligence (AI) systems, including Generative AI (GenAI), Retrieval-Augmented Generation (RAG), and agentic AI, is advancing faster than many organizations can adapt their governance, audit, cybersecurity, and executive oversight practices. This paper develops a proposed integrated AI governance prioritization architecture using a design-science research approach, supported by exploratory platform-risk analysis, a reproducible platform-risk dataset, a...",
+    "ground_truth_doc_ids": [
+      "10.21203/rs.3.rs-10012178/v1"
+    ]
+  },
+  {
+    "id": "q2",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'Does retrieval-augmented generation impact medical students’ perceptions of large language models? (Preprint)'?",
+    "ground_truth": "BACKGROUND There is evidence of rapid adoption of large language models (LLMs) in undergraduate medical education, with medical students using it to support their learning. This raises concerns particularly around the accuracy of LLM-generated information students are learning. Retrieval-augmented generation (RAG), which grounds a LLM in curated materials, may be a strategy to improve their accuracy. OBJECTIVE This study investigates if grounding LLM outputs in verifiable sources using RAG impac...",
+    "ground_truth_doc_ids": [
+      "10.2196/preprints.106157"
+    ]
+  },
+  {
+    "id": "q3",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'Operationalizing Reliability Gaps in Large Language Models: A Semi-Systematic Evidence Map of Reasoning, Factuality, Evaluation, and Retrieval-Augmented Generation'?",
+    "ground_truth": "Abstract Large language models (LLMs) increasingly support reasoning, question answering, decision support, and retrieval-augmented knowledge work. High benchmark performance, however, does not by itself establish reliability under realistic deployment conditions. This article treats LLM reliability as a pipeline-level evaluation construct rather than a single capability score. Using a semi-systematic evidence-map design, it synthesizes 77 studies selected from a broader OpenAlex audit trail of ...",
+    "ground_truth_doc_ids": [
+      "10.21203/rs.3.rs-9882260/v1"
+    ]
+  },
+  {
+    "id": "q4",
+    "question_type": "factual",
+    "question": "What percentage or accuracy value is mentioned in the paper 'An Agentic AI System for Roof Design Compliance Using Computer Vision, Retrieval-Augmented Generation and Large Language Models'?",
+    "ground_truth": "The paper mentions: 97%",
+    "ground_truth_doc_ids": [
+      "10.3390/buildings16132637"
+    ]
+  },
+  {
+    "id": "q5",
+    "question_type": "date",
+    "question": "When was the paper 'SafeRAG: A Large-Language-Model-Based Multistage Retrieval-Augmented Framework for Oil and Gas Safety Report Generation' published?",
+    "ground_truth": "2026-08-01",
+    "ground_truth_doc_ids": [
+      "10.2118/234689-pa"
+    ]
+  },
+  {
+    "id": "q6",
+    "question_type": "authors",
+    "question": "Who are the authors of the paper titled 'Retrieval-Augmented Generation (RAG), Generative AI, and Agentic AI Governance: An Integrated Enterprise Governance Prioritization Architecture'?",
+    "ground_truth": "Audrey Rah, Sven Hahues",
+    "ground_truth_doc_ids": [
+      "10.21203/rs.3.rs-10012178/v1"
+    ]
+  },
+  {
+    "id": "q7",
+    "question_type": "date",
+    "question": "When was the paper 'Microsoft Azure artificial intelligence / machine learning hackathon for development of retrieval-augmented generation large language model' published?",
+    "ground_truth": "2026-07-01",
+    "ground_truth_doc_ids": [
+      "10.21079/11681/50309"
+    ]
+  },
+  {
+    "id": "q8",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'Chatbot Hybrid Fatwa MUI Menggunakan Retrieval Augmented Generation dan Large Language Model'?",
+    "ground_truth": "Aksesibilitas dokumen digital Fatwa Majelis Ulama Indonesia (MUI) yang terfragmentasi membuat pencarian informasi kurang efektif. Di sisi lain, sistem tanya jawab AI berbasis satu sumber dokumen (single-corpus) rentan menghasilkan jawaban tidak akurat (halusinasi) pada pertanyaan di luar domain. Penelitian ini mengembangkan Chatbot Hybrid Fatwa MUI menggunakan arsitektur Hybrid Retrieval bertingkat dengan dua sumber pengetahuan: dokumen Fatwa MUI sebagai korpus utama dan 12.370 hadis Bukhari-Mus...",
+    "ground_truth_doc_ids": [
+      "10.52060/juptik.v4i1.4318"
+    ]
+  },
+  {
+    "id": "q9",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'An Agentic AI System for Roof Design Compliance Using Computer Vision, Retrieval-Augmented Generation and Large Language Models'?",
+    "ground_truth": "Designers, engineers, and building officials face increasing pressure to accelerate and improve the accuracy of design review for buildings and infrastructure. Roof assemblies and rooftop structures are particularly challenging due to the complexity and fragmentation of regulatory requirements, especially in jurisdictions such as Florida, where compliance must be verified across both the residential and commercial volumes of the Florida Building Code (FBC). The resulting review process is techni...",
+    "ground_truth_doc_ids": [
+      "10.3390/buildings16132637"
+    ]
+  },
+  {
+    "id": "q10",
+    "question_type": "date",
+    "question": "When was the paper 'Hi‐ RAG : A Hierarchical Retrieval‐Augmented Generation Framework for Scalable and Generalisable Tool Selection in Large Language Model Agents' published?",
+    "ground_truth": "2026-06-30",
+    "ground_truth_doc_ids": [
+      "10.1111/exsy.70341"
+    ]
+  },
+  {
+    "id": "q11",
+    "question_type": "authors",
+    "question": "Who are the authors of the paper titled 'The Age of Autonomous Agents: A Bibliometric Review of Agentic AI Architectures, Applications, and Emerging Challenges'?",
+    "ground_truth": "Ben J. Weber, Clara M. Hofmann, Amara N. Okoye",
+    "ground_truth_doc_ids": [
+      "10.63646/kpqm1958"
+    ]
+  },
+  {
+    "id": "q12",
+    "question_type": "date",
+    "question": "When was the paper 'Does retrieval-augmented generation impact medical students’ perceptions of large language models? (Preprint)' published?",
+    "ground_truth": "2026-07-03",
+    "ground_truth_doc_ids": [
+      "10.2196/preprints.106157"
+    ]
+  },
+  {
+    "id": "q13",
+    "question_type": "authors",
+    "question": "Who are the authors of the paper titled 'Снижение рисков применения LLM (Large Language Model) в сфере экономической безопасности предприятий молочной промышленности на основе подхода RAG (Retrieval-Augmented Generation)'?",
+    "ground_truth": "И.В. Ермаков, В.В. Филатов",
+    "ground_truth_doc_ids": [
+      "10.47576/2949-1894.2026.7.7.023"
+    ]
+  },
+  {
+    "id": "q14",
+    "question_type": "authors",
+    "question": "Who are the authors of the paper titled 'Does retrieval-augmented generation impact medical students’ perceptions of large language models? (Preprint)'?",
+    "ground_truth": "Rohin Athavale, Alexander Cresswell, Alice Huffman",
+    "ground_truth_doc_ids": [
+      "10.2196/preprints.106157"
+    ]
+  },
+  {
+    "id": "q15",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'Hallucination in Large Language Models and Retrieval-Augmented Generation: Mechanisms, Mitigation, and Evaluation'?",
+    "ground_truth": "Large language models have demonstrated strong generative capability in question answering, dialogue, and other knowledge-intensive tasks. However, their outputs remain vulnerable to hallucination, including factual errors, unsupported claims, spurious citations, and distorted reasoning. Retrieval-augmented generation (RAG) has been proposed as a practical remedy because it supplements parametric knowledge with external evidence retrieved at inference time. Yet RAG does not guarantee truthfulnes...",
+    "ground_truth_doc_ids": [
+      "10.54254/2753-8818/2026.dl34055"
+    ]
+  },
+  {
+    "id": "q16",
+    "question_type": "date",
+    "question": "When was the paper 'Retrieval-Augmented Generation (RAG), Generative AI, and Agentic AI Governance: An Integrated Enterprise Governance Prioritization Architecture' published?",
+    "ground_truth": "2026-06-15",
+    "ground_truth_doc_ids": [
+      "10.21203/rs.3.rs-10012178/v1"
+    ]
+  },
+  {
+    "id": "q17",
+    "question_type": "factual",
+    "question": "What percentage or accuracy value is mentioned in the paper 'JADE-Plus: A Multimodal Agentic Retrieval-Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study'?",
+    "ground_truth": "The paper mentions: 90%, 95%, 97%",
+    "ground_truth_doc_ids": [
+      "10.1007/s10278-026-02086-9"
+    ]
+  },
+  {
+    "id": "q18",
+    "question_type": "date",
+    "question": "When was the paper 'JADE-Plus: A Multimodal Agentic Retrieval-Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study' published?",
+    "ground_truth": "2026-07-13",
+    "ground_truth_doc_ids": [
+      "10.1007/s10278-026-02086-9"
+    ]
+  },
+  {
+    "id": "q19",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'Hybrid Graph Neural Network and Large Language Model Framework for Robust Knowledge Graph Question Answering via Retrieval-Augmented Generation'?",
+    "ground_truth": "Knowledge graphs (KGs) hold facts about the world as connected triples, and they have become a backbone for any system that needs to reason over linked information. The task of Knowledge Graph Question Answering (KGQA) is to map a natural-language question onto the right entity, or set of entities, somewhere inside such a graph. Two communities have been pulling at this problem from opposite ends. Large language models (LLMs) read a question fluently but tend to invent facts and stumble on multi...",
+    "ground_truth_doc_ids": [
+      "10.22214/ijraset.2026.82233"
+    ]
+  },
+  {
+    "id": "q20",
+    "question_type": "authors",
+    "question": "Who are the authors of the paper titled 'Hi‐ RAG : A Hierarchical Retrieval‐Augmented Generation Framework for Scalable and Generalisable Tool Selection in Large Language Model Agents'?",
+    "ground_truth": "Wei Tian, Yuhao Zhou",
+    "ground_truth_doc_ids": [
+      "10.1111/exsy.70341"
+    ]
+  },
+  {
+    "id": "q21",
+    "question_type": "authors",
+    "question": "Who are the authors of the paper titled 'Microsoft Azure artificial intelligence / machine learning hackathon for development of retrieval-augmented generation large language model'?",
+    "ground_truth": "Janet L. Autrey, Lacey S. Duckworth, Ashly N. Horner, Thomas Sigler, Victoria D. Moore",
+    "ground_truth_doc_ids": [
+      "10.21079/11681/50309"
+    ]
+  },
+  {
+    "id": "q22",
+    "question_type": "date",
+    "question": "When was the paper 'The Age of Autonomous Agents: A Bibliometric Review of Agentic AI Architectures, Applications, and Emerging Challenges' published?",
+    "ground_truth": "2026-06-30",
+    "ground_truth_doc_ids": [
+      "10.63646/kpqm1958"
+    ]
+  },
+  {
+    "id": "q23",
+    "question_type": "factual",
+    "question": "What percentage or accuracy value is mentioned in the paper 'Hi‐ RAG : A Hierarchical Retrieval‐Augmented Generation Framework for Scalable and Generalisable Tool Selection in Large Language Model Agents'?",
+    "ground_truth": "The paper mentions: 23%, 7.5%, 10.0%",
+    "ground_truth_doc_ids": [
+      "10.1111/exsy.70341"
+    ]
+  },
+  {
+    "id": "q24",
+    "question_type": "date",
+    "question": "When was the paper 'An Agentic AI System for Roof Design Compliance Using Computer Vision, Retrieval-Augmented Generation and Large Language Models' published?",
+    "ground_truth": "2026-07-02",
+    "ground_truth_doc_ids": [
+      "10.3390/buildings16132637"
+    ]
+  },
+  {
+    "id": "q25",
+    "question_type": "authors",
+    "question": "Who are the authors of the paper titled 'An Agentic AI System for Roof Design Compliance Using Computer Vision, Retrieval-Augmented Generation and Large Language Models'?",
+    "ground_truth": "Nawari O. Nawari, Oluwatoyin O. Lawal",
+    "ground_truth_doc_ids": [
+      "10.3390/buildings16132637"
+    ]
+  },
+  {
+    "id": "q26",
+    "question_type": "authors",
+    "question": "Who are the authors of the paper titled 'JADE-Plus: A Multimodal Agentic Retrieval-Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study'?",
+    "ground_truth": "Soroush Baseri Saadi, Jonas Ver Berne, Rocharles Cavalcante Fontenele, Peter Claes, Reinhilde Jacobs",
+    "ground_truth_doc_ids": [
+      "10.1007/s10278-026-02086-9"
+    ]
+  },
+  {
+    "id": "q27",
+    "question_type": "factual",
+    "question": "What percentage or accuracy value is mentioned in the paper 'Adapting Large Language Models for Low-Resource Regulated Domains: A Fine-Tuning and Retrieval-Augmented Generation Approach to Insurance Information Delivery in Kenya'?",
+    "ground_truth": "The paper mentions: 2.3%, 7.4%",
+    "ground_truth_doc_ids": [
+      "10.21203/rs.3.rs-9770645/v1"
+    ]
+  },
+  {
+    "id": "q28",
+    "question_type": "date",
+    "question": "When was the paper 'Снижение рисков применения LLM (Large Language Model) в сфере экономической безопасности предприятий молочной промышленности на основе подхода RAG (Retrieval-Augmented Generation)' published?",
+    "ground_truth": "2026-06-15",
+    "ground_truth_doc_ids": [
+      "10.47576/2949-1894.2026.7.7.023"
+    ]
+  },
+  {
+    "id": "q29",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'Retrieval-Augmented Large-Language-Model-Based Time-Series Forecasting for Cross-Market Equity Analysis'?",
+    "ground_truth": "Abstract Time-series foundation models and retrieval-based augmentation have recently emerged as relevant tools for financial forecasting, yet it remains unclear when explicit historical retrieval helps a pre-trained probabilistic forecaster in noisy equity settings. This study evaluates that question through Cross-Market Retrieval-Augmented Lag-Llama (CM-RAF-Lag-Llama), a controlled framework for comparing Lag-Llama-only forecasts with retrieval-augmented forecasts across emerging and developed...",
+    "ground_truth_doc_ids": [
+      "10.21203/rs.3.rs-10178277/v1"
+    ]
+  },
+  {
+    "id": "q30",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'SafeRAG: A Large-Language-Model-Based Multistage Retrieval-Augmented Framework for Oil and Gas Safety Report Generation'?",
+    "ground_truth": "Summary In high-risk industrial settings, leveraging large language models (LLMs) for automated accident analysis and generating safety reports has emerged as an efficient workflow. However, this approach is fundamentally constrained by the models’ inherent knowledge limitations, frequently resulting in analyses that lack domain-specific understanding and regulatory alignment. To tackle this issue, we introduce SafeRAG, a multistage retrieval-augmented framework for safety report generation. Spe...",
+    "ground_truth_doc_ids": [
+      "10.2118/234689-pa"
+    ]
+  },
+  {
+    "id": "q31",
+    "question_type": "factual",
+    "question": "What percentage or accuracy value is mentioned in the paper 'Chatbot Hybrid Fatwa MUI Menggunakan Retrieval Augmented Generation dan Large Language Model'?",
+    "ground_truth": "The paper mentions: 23%, 57%, 37%",
+    "ground_truth_doc_ids": [
+      "10.52060/juptik.v4i1.4318"
+    ]
+  },
+  {
+    "id": "q32",
+    "question_type": "date",
+    "question": "When was the paper 'Retrieval-Augmented Large-Language-Model-Based Time-Series Forecasting for Cross-Market Equity Analysis' published?",
+    "ground_truth": "2026-07-10",
+    "ground_truth_doc_ids": [
+      "10.21203/rs.3.rs-10178277/v1"
+    ]
+  },
+  {
+    "id": "q33",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'Microsoft Azure artificial intelligence / machine learning hackathon for development of retrieval-augmented generation large language model'?",
+    "ground_truth": "The US Army Corps of Engineers (USACE) Civil Works (CW) research and development (R&amp;D) mission is to address challenging environmental sustainability problems through innovative science and engineering, which helps to ensure a safer, more prosperous, and more resilient nation. To achieve this, the US Army Engineer Research and Development Center (ERDC) plans, executes, leads, and directs many R&amp;D programs in coordination with USACE Headquarters, Districts, and Divisions through its multi...",
+    "ground_truth_doc_ids": [
+      "10.21079/11681/50309"
+    ]
+  },
+  {
+    "id": "q34",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'The Age of Autonomous Agents: A Bibliometric Review of Agentic AI Architectures, Applications, and Emerging Challenges'?",
+    "ground_truth": "The rapid evolution of large language models (LLMs) has catalyzed a shift from passive AI systems toward autonomous agentic architectures capable of reasoning, memory, tool use, and multi-agent collaboration. This bibliometric review characterizes the emerging field through 810 publications retrieved from the Web of Science Core Collection for the period 2023–2025. Annual output rose sharply over this window—from 4 publications in 2023 to 96 in 2024 and 710 in 2025—accompanied by a parallel rise...",
+    "ground_truth_doc_ids": [
+      "10.63646/kpqm1958"
+    ]
+  },
+  {
+    "id": "q35",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'Снижение рисков применения LLM (Large Language Model) в сфере экономической безопасности предприятий молочной промышленности на основе подхода RAG (Retrieval-Augmented Generation)'?",
+    "ground_truth": "В статье проведено исследование особенностей снижения рисков применения LLM (Large Language Model) в сфере экономической безопасности предприятий молочной промышленности на основе подхода RAG (Retrieval-Augmented Generation) в современных условиях. Рассмотрены риски применения LLM в сфере экономической безопасности предприятий молочной промышленности. Подробно разобраны сценарии применения LLM+RAG в российской молочной промышленности – с описанием процесса, задействованных данных, решаемых риско...",
+    "ground_truth_doc_ids": [
+      "10.47576/2949-1894.2026.7.7.023"
+    ]
+  },
+  {
+    "id": "q36",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'Adapting Large Language Models for Low-Resource Regulated Domains: A Fine-Tuning and Retrieval-Augmented Generation Approach to Insurance Information Delivery in Kenya'?",
+    "ground_truth": "Abstract Background. Insurance penetration in Kenya stands at roughly 2.3% of GDP, well below the global average of 7.4%. Documented barriers include low financial literacy, affordability, cultural resistance and limited access to trusted, locally relevant information. Large Language Models (LLMs) could in principle deliver scalable, personalised information, but off-the-shelf models perform poorly on jurisdiction-specific regulatory content and are prone to hallucination in low-resource domains...",
+    "ground_truth_doc_ids": [
+      "10.21203/rs.3.rs-9770645/v1"
+    ]
+  },
+  {
+    "id": "q37",
+    "question_type": "authors",
+    "question": "Who are the authors of the paper titled 'SafeRAG: A Large-Language-Model-Based Multistage Retrieval-Augmented Framework for Oil and Gas Safety Report Generation'?",
+    "ground_truth": "Qianwen Cao, Chiyu Zhang, Junxiong Ning, Gongru Li",
+    "ground_truth_doc_ids": [
+      "10.2118/234689-pa"
+    ]
+  },
+  {
+    "id": "q38",
+    "question_type": "authors",
+    "question": "Who are the authors of the paper titled 'Retrieval-Augmented Large-Language-Model-Based Time-Series Forecasting for Cross-Market Equity Analysis'?",
+    "ground_truth": "Novanto Yudistira, Yanuar Putra Kharisma Adhiyasa",
+    "ground_truth_doc_ids": [
+      "10.21203/rs.3.rs-10178277/v1"
+    ]
+  },
+  {
+    "id": "q39",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'JADE-Plus: A Multimodal Agentic Retrieval-Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study'?",
+    "ground_truth": "Abstract Diagnosing jawbone lesions in oral and maxillofacial radiology remains challenging due to overlapping radiological features and the need for integrated clinical reasoning. This study aimed to develop and validate JADE-Plus, a novel multimodal, agent-controlled retrieval-augmented generation (RAG) framework for diagnostic decision support in jawbone lesion assessment. JADE-Plus was implemented as a cloud-based, tablet-optimized system integrating a vision-language model (VLM) for panoram...",
+    "ground_truth_doc_ids": [
+      "10.1007/s10278-026-02086-9"
+    ]
+  },
+  {
+    "id": "q40",
+    "question_type": "summary",
+    "question": "What is the main contribution or approach described in the paper titled 'Hi‐ RAG : A Hierarchical Retrieval‐Augmented Generation Framework for Scalable and Generalisable Tool Selection in Large Language Model Agents'?",
+    "ground_truth": "ABSTRACT As tool repositories for Large Language Model (LLM) agents grow from dozens to hundreds of endpoints, flat retrieval paradigms that treat the repository as an unstructured list suffer from context overload, cross‐domain semantic collision and degraded selection accuracy. We propose Hi‐RAG, a Hierarchical Retrieval‐Augmented Generation framework that exploits the Type Service Tool structure of the Model Context Protocol (MCP) via a principled coarse‐to‐fine pipeline. Stage 1 applies a To...",
+    "ground_truth_doc_ids": [
+      "10.1111/exsy.70341"
+    ]
+  }
+]
