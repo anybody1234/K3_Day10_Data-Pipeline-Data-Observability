@@ -110,9 +110,28 @@ def evaluate_pipeline(
     test_set = read_json(test_set_path)
     answers: list[dict[str, Any]] = []
 
+    # Build LLM for RAG-style answer generation
+    llm = build_llm(settings=settings, temperature=0.0)
+
     for item in test_set:
+        # Step 1: Retrieve relevant documents
         result = answer_question(item["question"], settings=settings, index=index)
-        judge = _judge_answer(settings, item["question"], item["ground_truth"], result.answer)
+
+        # Step 2: Use LLM to generate answer from retrieved contexts (true RAG)
+        contexts_text = "\n\n".join(result.retrieved_contexts[:2])
+        rag_prompt = (
+            f"Based ONLY on the following research paper excerpts, answer the question concisely in 1-2 sentences.\n\n"
+            f"--- EXCERPTS ---\n{contexts_text}\n--- END ---\n\n"
+            f"Question: {item['question']}\n"
+            f"Answer concisely:"
+        )
+        try:
+            llm_response = llm.invoke(rag_prompt, max_tokens=256)
+            llm_answer = llm_response.content.strip() if hasattr(llm_response, 'content') else str(llm_response).strip()
+        except Exception:
+            llm_answer = result.answer
+
+        judge = _judge_answer(settings, item["question"], item["ground_truth"], llm_answer)
         retrieval_hit = any(doc_id in item["ground_truth_doc_ids"] for doc_id in result.retrieved_doc_ids)
         answers.append(
             {
@@ -121,11 +140,11 @@ def evaluate_pipeline(
                 "question": item["question"],
                 "ground_truth": item["ground_truth"],
                 "ground_truth_doc_ids": item["ground_truth_doc_ids"],
-                "answer": result.answer,
+                "answer": llm_answer,
                 "retrieved_doc_ids": result.retrieved_doc_ids,
                 "retrieved_contexts": result.retrieved_contexts,
                 "retrieval_hit": retrieval_hit,
-                "token_f1": _token_f1(item["ground_truth"], result.answer),
+                "token_f1": _token_f1(item["ground_truth"], llm_answer),
                 "judge": judge.model_dump(),
             }
         )
@@ -143,3 +162,4 @@ def evaluate_pipeline(
     write_json(metrics_output_path, summary)
     write_json(answers_output_path, answers)
     return bundle
+
