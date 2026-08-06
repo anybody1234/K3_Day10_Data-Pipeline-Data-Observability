@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-08-06T05:17:43.641155+00:00",
+  "seed": 42,
+  "corrupt_fraction": 0.3,
+  "total_questions": 18,
+  "corrupted_questions": 5,
+  "corruption_types": {
+    "clean": 13,
+    "ground_truth_corrupted": 2,
+    "question_corrupted": 2,
+    "doc_ids_corrupted": 3
+  },
+  "corruption_operations": [
+    {
+      "type": "ground_truth_noise",
+      "description": "Injected random noise tokens into ground truth answers"
+    },
+    {
+      "type": "question_prefix_suffix",
+      "description": "Added random prefix/suffix to questions"
+    },
+    {
+      "type": "doc_ids_replacement",
+      "description": "Replaced ground truth document IDs with fake IDs"
+    }
+  ]
+}
