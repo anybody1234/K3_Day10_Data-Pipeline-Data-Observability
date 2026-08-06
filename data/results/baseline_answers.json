@@ -7,7 +7,7 @@
     "ground_truth_doc_ids": [
       "10.2118/234689-pa"
     ],
-    "answer": "Summary In high-risk industrial settings, leveraging large language models (LLMs) for automated accident analysis and generating safety reports has emerged as an efficient workflow.",
+    "answer": "The main contribution of the SafeRAG paper is the introduction of a multistage retrieval-augmented framework that significantly outperforms baseline LLMs in generating domain-specific and regulatory-aligned safety reports for high-risk industrial settings. This is achieved by integrating internally generated domain knowledge with hierarchically retrieved external regulations and leveraging prompt engineering and a domain-expert persona.",
     "retrieved_doc_ids": [
       "10.2118/234689-pa",
       "10.20944/preprints202604.0339.v1",
@@ -21,10 +21,10 @@
       "The Age of Autonomous Agents: A Bibliometric Review of Agentic AI Architectures, Applications, and Emerging Challenges. The rapid evolution of large language models (LLMs) has catalyzed a shift from passive AI systems toward autonomous agentic architectures capable of reasoning, memory, tool use, and multi-agent collaboration. This bibliometric review characterizes the emerging field through 810 publications retrieved from the Web of Science Core Collection for the period 2023\u20132025. Annual output rose sharply over this window\u2014from 4 publications in 2023 to 96 in 2024 and 710 in 2025\u2014accompanied by a parallel rise in citations, indicating rapid mainstream adoption. Author-keyword analysis reveals a landscape dominated by large language models, artificial intelligence, and multi-agent systems, with agentic AI, generative AI, and retrieval-augmented generation (RAG) emerging as core themes. Research output is geographically concentrated, led by China and the United States, and is distributed across a broad range of engineering, applied-science, and domain-specific journals rather than a single specialist venue, reflecting the field's cross-disciplinary uptake. Synthesizing this corpus, we organize the technical landscape around reasoning, memory, tool integration and RAG, and multi-agent orchestration; survey application domains spanning healthcare, scientific discovery, education, and software engineering, with emerging activity in finance and law; and analyze the principal challenges\u2014hallucination, trust and robustness, inter-agent coordination, scalability, and governance. The review provides a structured, evidence-based map of agentic AI research to orient researchers and practitioners navigating this rapidly evolving field. Authors: Ben J. Weber, Clara M. Hofmann, Amara N. Okoye"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.2571428571428572,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -36,7 +36,7 @@
     "ground_truth_doc_ids": [
       "10.2118/234689-pa"
     ],
-    "answer": "Qianwen Cao, Chiyu Zhang, Junxiong Ning, Gongru Li",
+    "answer": "The paper 'SafeRAG: A Large-Language-Model-Based Multistage Retrieval-Augmented Framework for Oil and Gas Safety Report Generation' was authored by Qianwen Cao, Chiyu Zhang, Junxiong Ning, and Gongru Li.",
     "retrieved_doc_ids": [
       "10.2118/234689-pa",
       "10.20944/preprints202604.0339.v1",
@@ -50,10 +50,10 @@
       "Speculative Retrieval-Augmented Generation for Cost-Efficient Large Language Model Inference. Abstract - This work focuses on the two crucial bottlenecks in Retrieval-Augmented Generation (RAG): high inference latency and expensive computation cost. RAG enhances the factual correctness of Large Language Models (LLMs) by utilizing external knowledge sources; However, the auto-To achieve a good recall, the system applies a two-way retrieval mechanism: Dense retrieval: This module uses BAAI/bge-small-en-v1.5 to create a 384-dimensional embedding space, where queries and documents are mapped. The embeddings are stored in a FAISS IndexFlatL2. Sparse retrieval: This module uses TF-IDF vectorization to capture an exact keyword match. Reranking: A simple heuristic mechanism of matching substrings of the query terms in the documents selected to perform the final step of ranking them for prompt introduce a novel speculative RAG framework that combines hybrid retrieval with speculative decoding. Our framework employs hybrid dense vector search (BGE-small) and sparse keyword search (TF-IDF) for enhanced recall followed by a lightweight re-ranker model. A compact draft model (TinyLlama-1.1B) makes tentative future token generation, then a larger verifier model (Mistral-7B) checks the correctness of the candidate token. Empirical experiments demonstrate 33% and 29% improvement in inference latency and token reduction, respectively, compared to the baseline of a typical 7B model, while retaining 94% accuracy on factoid tasks. Key Words: Retrieval-Augmented Generation, Speculative Decoding, Large Language Models, Inference Optimization, Hybrid Retrieval Authors: Dr. Sumalatha P, Manoj Kumar"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.411764705882353,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -65,7 +65,7 @@
     "ground_truth_doc_ids": [
       "10.2118/234689-pa"
     ],
-    "answer": "2026-08-01",
+    "answer": "The provided excerpts do not contain publication dates for either paper.",
     "retrieved_doc_ids": [
       "10.2118/234689-pa",
       "10.20944/preprints202604.0339.v1",
@@ -79,10 +79,10 @@
       "The Age of Autonomous Agents: A Bibliometric Review of Agentic AI Architectures, Applications, and Emerging Challenges. The rapid evolution of large language models (LLMs) has catalyzed a shift from passive AI systems toward autonomous agentic architectures capable of reasoning, memory, tool use, and multi-agent collaboration. This bibliometric review characterizes the emerging field through 810 publications retrieved from the Web of Science Core Collection for the period 2023\u20132025. Annual output rose sharply over this window\u2014from 4 publications in 2023 to 96 in 2024 and 710 in 2025\u2014accompanied by a parallel rise in citations, indicating rapid mainstream adoption. Author-keyword analysis reveals a landscape dominated by large language models, artificial intelligence, and multi-agent systems, with agentic AI, generative AI, and retrieval-augmented generation (RAG) emerging as core themes. Research output is geographically concentrated, led by China and the United States, and is distributed across a broad range of engineering, applied-science, and domain-specific journals rather than a single specialist venue, reflecting the field's cross-disciplinary uptake. Synthesizing this corpus, we organize the technical landscape around reasoning, memory, tool integration and RAG, and multi-agent orchestration; survey application domains spanning healthcare, scientific discovery, education, and software engineering, with emerging activity in finance and law; and analyze the principal challenges\u2014hallucination, trust and robustness, inter-agent coordination, scalability, and governance. The review provides a structured, evidence-based map of agentic AI research to orient researchers and practitioners navigating this rapidly evolving field. Authors: Ben J. Weber, Clara M. Hofmann, Amara N. Okoye"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.0,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -94,7 +94,7 @@
     "ground_truth_doc_ids": [
       "10.3390/buildings16132637"
     ],
-    "answer": "Designers, engineers, and building officials face increasing pressure to accelerate and improve the accuracy of design review for buildings and infrastructure.",
+    "answer": "The paper proposes and evaluates an agentic AI framework for automated code compliance checking of roof assemblies, demonstrating that it can meaningfully support compliance review and reduce reviewer burden with high accuracy (GPT-5.4 achieved 97% accuracy).",
     "retrieved_doc_ids": [
       "10.3390/buildings16132637",
       "10.63646/kpqm1958",
@@ -108,10 +108,10 @@
       "Microsoft Azure artificial intelligence / machine learning hackathon for development of retrieval-augmented generation large language model. The US Army Corps of Engineers (USACE) Civil Works (CW) research and development (R&amp;D) mission is to address challenging environmental sustainability problems through innovative science and engineering, which helps to ensure a safer, more prosperous, and more resilient nation. To achieve this, the US Army Engineer Research and Development Center (ERDC) plans, executes, leads, and directs many R&amp;D programs in coordination with USACE Headquarters, Districts, and Divisions through its multiple strategic focus areas, which include infrastructure, water modeling, crisis preparedness, ecosystem, sediment management, data, artificial intelligence, and robotics. In this process, much information is generated, including internal progress reviews, financial reports, scopes of work, work package planning, and success stories. Authors: Janet L. Autrey, Lacey S. Duckworth, Ashly N. Horner, Thomas Sigler, Victoria D. Moore"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.22641509433962262,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -123,7 +123,7 @@
     "ground_truth_doc_ids": [
       "10.3390/buildings16132637"
     ],
-    "answer": "Nawari O. Nawari, Oluwatoyin O. Lawal",
+    "answer": "The paper 'An Agentic AI System for Roof Design Compliance Using Computer Vision, Retrieval-Augmented Generation and Large Language Models' was authored by Nawari O. Nawari and Oluwatoyin O. Lawal.",
     "retrieved_doc_ids": [
       "10.3390/buildings16132637",
       "10.63646/kpqm1958",
@@ -137,10 +137,10 @@
       "Microsoft Azure artificial intelligence / machine learning hackathon for development of retrieval-augmented generation large language model. The US Army Corps of Engineers (USACE) Civil Works (CW) research and development (R&amp;D) mission is to address challenging environmental sustainability problems through innovative science and engineering, which helps to ensure a safer, more prosperous, and more resilient nation. To achieve this, the US Army Engineer Research and Development Center (ERDC) plans, executes, leads, and directs many R&amp;D programs in coordination with USACE Headquarters, Districts, and Divisions through its multiple strategic focus areas, which include infrastructure, water modeling, crisis preparedness, ecosystem, sediment management, data, artificial intelligence, and robotics. In this process, much information is generated, including internal progress reviews, financial reports, scopes of work, work package planning, and success stories. Authors: Janet L. Autrey, Lacey S. Duckworth, Ashly N. Horner, Thomas Sigler, Victoria D. Moore"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.1935483870967742,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -152,7 +152,7 @@
     "ground_truth_doc_ids": [
       "10.3390/buildings16132637"
     ],
-    "answer": "2026-07-02",
+    "answer": "The provided excerpts do not state the publication date for the paper 'An Agentic AI System for Roof Design Compliance Using Computer Vision, Retrieval-Augmented Generation and Large Language Models'.",
     "retrieved_doc_ids": [
       "10.3390/buildings16132637",
       "10.63646/kpqm1958",
@@ -166,10 +166,10 @@
       "Microsoft Azure artificial intelligence / machine learning hackathon for development of retrieval-augmented generation large language model. The US Army Corps of Engineers (USACE) Civil Works (CW) research and development (R&amp;D) mission is to address challenging environmental sustainability problems through innovative science and engineering, which helps to ensure a safer, more prosperous, and more resilient nation. To achieve this, the US Army Engineer Research and Development Center (ERDC) plans, executes, leads, and directs many R&amp;D programs in coordination with USACE Headquarters, Districts, and Divisions through its multiple strategic focus areas, which include infrastructure, water modeling, crisis preparedness, ecosystem, sediment management, data, artificial intelligence, and robotics. In this process, much information is generated, including internal progress reviews, financial reports, scopes of work, work package planning, and success stories. Authors: Janet L. Autrey, Lacey S. Duckworth, Ashly N. Horner, Thomas Sigler, Victoria D. Moore"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.0,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -181,7 +181,7 @@
     "ground_truth_doc_ids": [
       "10.47576/2949-1894.2026.7.7.023"
     ],
-    "answer": "\u0412 \u0441\u0442\u0430\u0442\u044c\u0435 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043e \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0435 \u043e\u0441\u043e\u0431\u0435\u043d\u043d\u043e\u0441\u0442\u0435\u0439 \u0441\u043d\u0438\u0436\u0435\u043d\u0438\u044f \u0440\u0438\u0441\u043a\u043e\u0432 \u043f\u0440\u0438\u043c\u0435\u043d\u0435\u043d\u0438\u044f LLM (Large Language Model) \u0432 \u0441\u0444\u0435\u0440\u0435 \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u044f\u0442\u0438\u0439 \u043c\u043e\u043b\u043e\u0447\u043d\u043e\u0439 \u043f\u0440\u043e\u043c\u044b\u0448\u043b\u0435\u043d\u043d\u043e\u0441\u0442\u0438 \u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0435 \u043f\u043e\u0434\u0445\u043e\u0434\u0430 RAG (Retrieval-Augmented Generation) \u0432 \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0445 \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u0445.",
+    "answer": "The paper demonstrates that integrating RAG with LLMs transforms them from a potentially dangerous tool into a reliable decision support mechanism for economic security in the dairy industry, addressing risks from fraud monitoring to economic forecasting.",
     "retrieved_doc_ids": [
       "10.47576/2949-1894.2026.7.7.023",
       "10.70121/001c.158711",
@@ -195,10 +195,10 @@
       "0346 Retrieval Augmented Generation Improves Large Language Model Performance in Sleep Medicine. Abstract Introduction While Large Language Models (LLMs) offer generative capabilities, generic models often lack domain-specific grounding, leading to hallucinations in high-stakes contexts. However, LLMs can serve as clinical decision support tools if augmented with specific domain data. This study evaluates the utility of Retrieval-Augmented Generation (RAG) applied to open-source LLMs, utilizing a curated knowledge base of authoritative sleep medicine textbooks, to quantify improvement in performance. Methods We evaluated four open-source models\u2014Llama-70B, Llama-8B, Qwen-14B, and Qwen-235B, linked to a RAG system indexing five standard textbooks, including ICSD-3 TR. Models were tested on sleep board\u2013style MCQs and clinical vignettes diagnostic accuracy. Performance was assessed across nine configurations derived from three factors: RAG pipeline complexity (Plain vs. Complicated), textbook preprocessing (Uncleaned vs. Cleaned/TOC-aligned), and retriever type (Dense-only vs. Hybrid). Metrics included MCQ Accuracy and the rates at which the correct diagnosis appeared as the top result or within the top 5 differential diagnosis lists for vignettes. Results RAG consistently outperformed the no-RAG baseline, yielding absolute performance gains of 5.6%\u201310.7% for MCQs and 8.1%\u201310.2% for the top diagnosis in cases across all models. For MCQs, Qwen-235B achieved the highest accuracy of 87.3% (vs. 81.7% baseline) using the Plain RAG configuration with Cleaned (TOC-aligned) Hybrid retrieval. Llama-70B followed with 83.6% in the same configuration. For case vignettes, Qwen-235B achieved a correct top diagnosis rate of 66.3% and a correct diagnosis rate within the top 5 differential diagnosis lists of 90.8% using Cleaned Hybrid retrieval configurations. Hybrid retrieval (Dense + Sparse) consistently surpassed Dense-only methods. Notably, while larger models benefited from Cleaned text, smaller models (e.g., Qwen-14B) achieved higher top diagnosis rates with Uncleaned text (57.1% vs. 51.0%), suggesting a dependency on redundant context in lower-parameter settings. Conclusion RAG significantly enhances knowledge performance of open-source LLMs in sleep medicine. Hybrid retrieval and curated, TOC-aligned knowledge bases yield optimal results for large models, whereas smaller models benefit from the redundancy of uncleaned text. These findings suggest that RAG systems can augment LLMs in domain specific knowledge for clinical decision support. Support (if any) Authors: Joseph Cheung, Pengze Li, Anshum Patel, SaiKrishna Vallamchetla, Het Contractor, Hayden Heninger, Cui Tao"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.034482758620689655,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -210,7 +210,7 @@
     "ground_truth_doc_ids": [
       "10.47576/2949-1894.2026.7.7.023"
     ],
-    "answer": "\u0418.\u0412. \u0415\u0440\u043c\u0430\u043a\u043e\u0432, \u0412.\u0412. \u0424\u0438\u043b\u0430\u0442\u043e\u0432",
+    "answer": "The authors of the paper are \u0418.\u0412. \u0415\u0440\u043c\u0430\u043a\u043e\u0432 and \u0412.\u0412. \u0424\u0438\u043b\u0430\u0442\u043e\u0432.",
     "retrieved_doc_ids": [
       "10.47576/2949-1894.2026.7.7.023",
       "10.63646/kpqm1958",
@@ -224,10 +224,10 @@
       "The Role of Retrieval-Augmented Generation in Improving Factual Accuracy for Medical Large Language Models. Large Language Models (LLMs) that rely solely on parametric memory learned through training have demonstrated strong performance in biomedical question-answering, but their tendency to hallucinate facts and the difficulty of adjusting and adding to the learned knowledge limit their usefulness in clinical settings. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by adding a non-parametric source of memory and grounding LLM outputs to reputable external sources. This paper aims to survey the evolution of RAG methodologies and highlight the most recent developments and shifts in paradigms like Agentic RAG. We highlight current state-of-the-art biomedical RAG systems, the latest evaluation benchmarks, and empirical findings regarding best fine-tuning practices. We also examine technical including lost-in-the-middle effects and scaling behaviour. Ethical concerns surrounding privacy and bias are brought to attention alongside research gaps. Finally, we discuss future directions of RAG in the biomedical field, including integration into Clinical Decision Support systems (CDS). Authors: Eason Ni"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.28571428571428575,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -239,7 +239,7 @@
     "ground_truth_doc_ids": [
       "10.47576/2949-1894.2026.7.7.023"
     ],
-    "answer": "2026-06-15",
+    "answer": "The provided excerpts do not contain the publication date for the paper '\u0421\u043d\u0438\u0436\u0435\u043d\u0438\u0435 \u0440\u0438\u0441\u043a\u043e\u0432 \u043f\u0440\u0438\u043c\u0435\u043d\u0435\u043d\u0438\u044f LLM (Large Language Model) \u0432 \u0441\u0444\u0435\u0440\u0435 \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u044f\u0442\u0438\u0439 \u043c\u043e\u043b\u043e\u0447\u043d\u043e\u0439 \u043f\u0440\u043e\u043c\u044b\u0448\u043b\u0435\u043d\u043d\u043e\u0441\u0442\u0438 \u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0435 \u043f\u043e\u0434\u0445\u043e\u0434\u0430 RAG (Retrieval-Augmented Generation)'.",
     "retrieved_doc_ids": [
       "10.47576/2949-1894.2026.7.7.023",
       "10.1093/sleep/zsag091.0346",
@@ -253,10 +253,10 @@
       "The Role of Retrieval-Augmented Generation in Improving Factual Accuracy for Medical Large Language Models. Large Language Models (LLMs) that rely solely on parametric memory learned through training have demonstrated strong performance in biomedical question-answering, but their tendency to hallucinate facts and the difficulty of adjusting and adding to the learned knowledge limit their usefulness in clinical settings. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by adding a non-parametric source of memory and grounding LLM outputs to reputable external sources. This paper aims to survey the evolution of RAG methodologies and highlight the most recent developments and shifts in paradigms like Agentic RAG. We highlight current state-of-the-art biomedical RAG systems, the latest evaluation benchmarks, and empirical findings regarding best fine-tuning practices. We also examine technical including lost-in-the-middle effects and scaling behaviour. Ethical concerns surrounding privacy and bias are brought to attention alongside research gaps. Finally, we discuss future directions of RAG in the biomedical field, including integration into Clinical Decision Support systems (CDS). Authors: Eason Ni"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.0,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -268,7 +268,7 @@
     "ground_truth_doc_ids": [
       "10.54254/2753-8818/2026.dl34055"
     ],
-    "answer": "Large language models have demonstrated strong generative capability in question answering, dialogue, and other knowledge-intensive tasks.",
+    "answer": "This paper reviews the relationship between hallucination and RAG, analyzing its causes, organizing mitigation strategies, and examining evaluation dimensions, ultimately arguing that RAG is not a complete solution to hallucination but enables externally grounded generation.",
     "retrieved_doc_ids": [
       "10.54254/2753-8818/2026.dl34055",
       "10.63646/kpqm1958",
@@ -282,10 +282,10 @@
       "0346 Retrieval Augmented Generation Improves Large Language Model Performance in Sleep Medicine. Abstract Introduction While Large Language Models (LLMs) offer generative capabilities, generic models often lack domain-specific grounding, leading to hallucinations in high-stakes contexts. However, LLMs can serve as clinical decision support tools if augmented with specific domain data. This study evaluates the utility of Retrieval-Augmented Generation (RAG) applied to open-source LLMs, utilizing a curated knowledge base of authoritative sleep medicine textbooks, to quantify improvement in performance. Methods We evaluated four open-source models\u2014Llama-70B, Llama-8B, Qwen-14B, and Qwen-235B, linked to a RAG system indexing five standard textbooks, including ICSD-3 TR. Models were tested on sleep board\u2013style MCQs and clinical vignettes diagnostic accuracy. Performance was assessed across nine configurations derived from three factors: RAG pipeline complexity (Plain vs. Complicated), textbook preprocessing (Uncleaned vs. Cleaned/TOC-aligned), and retriever type (Dense-only vs. Hybrid). Metrics included MCQ Accuracy and the rates at which the correct diagnosis appeared as the top result or within the top 5 differential diagnosis lists for vignettes. Results RAG consistently outperformed the no-RAG baseline, yielding absolute performance gains of 5.6%\u201310.7% for MCQs and 8.1%\u201310.2% for the top diagnosis in cases across all models. For MCQs, Qwen-235B achieved the highest accuracy of 87.3% (vs. 81.7% baseline) using the Plain RAG configuration with Cleaned (TOC-aligned) Hybrid retrieval. Llama-70B followed with 83.6% in the same configuration. For case vignettes, Qwen-235B achieved a correct top diagnosis rate of 66.3% and a correct diagnosis rate within the top 5 differential diagnosis lists of 90.8% using Cleaned Hybrid retrieval configurations. Hybrid retrieval (Dense + Sparse) consistently surpassed Dense-only methods. Notably, while larger models benefited from Cleaned text, smaller models (e.g., Qwen-14B) achieved higher top diagnosis rates with Uncleaned text (57.1% vs. 51.0%), suggesting a dependency on redundant context in lower-parameter settings. Conclusion RAG significantly enhances knowledge performance of open-source LLMs in sleep medicine. Hybrid retrieval and curated, TOC-aligned knowledge bases yield optimal results for large models, whereas smaller models benefit from the redundancy of uncleaned text. These findings suggest that RAG systems can augment LLMs in domain specific knowledge for clinical decision support. Support (if any) Authors: Joseph Cheung, Pengze Li, Anshum Patel, SaiKrishna Vallamchetla, Het Contractor, Hayden Heninger, Cui Tao"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.04081632653061225,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -297,7 +297,7 @@
     "ground_truth_doc_ids": [
       "10.54254/2753-8818/2026.dl34055"
     ],
-    "answer": "Haopeng Yang",
+    "answer": "Haopeng Yang authored the paper 'Hallucination in Large Language Models and Retrieval-Augmented Generation: Mechanisms, Mitigation, and Evaluation'.",
     "retrieved_doc_ids": [
       "10.54254/2753-8818/2026.dl34055",
       "10.63646/kpqm1958",
@@ -311,10 +311,10 @@
       "0346 Retrieval Augmented Generation Improves Large Language Model Performance in Sleep Medicine. Abstract Introduction While Large Language Models (LLMs) offer generative capabilities, generic models often lack domain-specific grounding, leading to hallucinations in high-stakes contexts. However, LLMs can serve as clinical decision support tools if augmented with specific domain data. This study evaluates the utility of Retrieval-Augmented Generation (RAG) applied to open-source LLMs, utilizing a curated knowledge base of authoritative sleep medicine textbooks, to quantify improvement in performance. Methods We evaluated four open-source models\u2014Llama-70B, Llama-8B, Qwen-14B, and Qwen-235B, linked to a RAG system indexing five standard textbooks, including ICSD-3 TR. Models were tested on sleep board\u2013style MCQs and clinical vignettes diagnostic accuracy. Performance was assessed across nine configurations derived from three factors: RAG pipeline complexity (Plain vs. Complicated), textbook preprocessing (Uncleaned vs. Cleaned/TOC-aligned), and retriever type (Dense-only vs. Hybrid). Metrics included MCQ Accuracy and the rates at which the correct diagnosis appeared as the top result or within the top 5 differential diagnosis lists for vignettes. Results RAG consistently outperformed the no-RAG baseline, yielding absolute performance gains of 5.6%\u201310.7% for MCQs and 8.1%\u201310.2% for the top diagnosis in cases across all models. For MCQs, Qwen-235B achieved the highest accuracy of 87.3% (vs. 81.7% baseline) using the Plain RAG configuration with Cleaned (TOC-aligned) Hybrid retrieval. Llama-70B followed with 83.6% in the same configuration. For case vignettes, Qwen-235B achieved a correct top diagnosis rate of 66.3% and a correct diagnosis rate within the top 5 differential diagnosis lists of 90.8% using Cleaned Hybrid retrieval configurations. Hybrid retrieval (Dense + Sparse) consistently surpassed Dense-only methods. Notably, while larger models benefited from Cleaned text, smaller models (e.g., Qwen-14B) achieved higher top diagnosis rates with Uncleaned text (57.1% vs. 51.0%), suggesting a dependency on redundant context in lower-parameter settings. Conclusion RAG significantly enhances knowledge performance of open-source LLMs in sleep medicine. Hybrid retrieval and curated, TOC-aligned knowledge bases yield optimal results for large models, whereas smaller models benefit from the redundancy of uncleaned text. These findings suggest that RAG systems can augment LLMs in domain specific knowledge for clinical decision support. Support (if any) Authors: Joseph Cheung, Pengze Li, Anshum Patel, SaiKrishna Vallamchetla, Het Contractor, Hayden Heninger, Cui Tao"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.2222222222222222,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -326,7 +326,7 @@
     "ground_truth_doc_ids": [
       "10.54254/2753-8818/2026.dl34055"
     ],
-    "answer": "2026-06-01",
+    "answer": "The provided excerpts do not contain the publication date for the paper 'Hallucination in Large Language Models and Retrieval-Augmented Generation: Mechanisms, Mitigation, and Evaluation'.",
     "retrieved_doc_ids": [
       "10.54254/2753-8818/2026.dl34055",
       "10.63646/kpqm1958",
@@ -340,10 +340,10 @@
       "0346 Retrieval Augmented Generation Improves Large Language Model Performance in Sleep Medicine. Abstract Introduction While Large Language Models (LLMs) offer generative capabilities, generic models often lack domain-specific grounding, leading to hallucinations in high-stakes contexts. However, LLMs can serve as clinical decision support tools if augmented with specific domain data. This study evaluates the utility of Retrieval-Augmented Generation (RAG) applied to open-source LLMs, utilizing a curated knowledge base of authoritative sleep medicine textbooks, to quantify improvement in performance. Methods We evaluated four open-source models\u2014Llama-70B, Llama-8B, Qwen-14B, and Qwen-235B, linked to a RAG system indexing five standard textbooks, including ICSD-3 TR. Models were tested on sleep board\u2013style MCQs and clinical vignettes diagnostic accuracy. Performance was assessed across nine configurations derived from three factors: RAG pipeline complexity (Plain vs. Complicated), textbook preprocessing (Uncleaned vs. Cleaned/TOC-aligned), and retriever type (Dense-only vs. Hybrid). Metrics included MCQ Accuracy and the rates at which the correct diagnosis appeared as the top result or within the top 5 differential diagnosis lists for vignettes. Results RAG consistently outperformed the no-RAG baseline, yielding absolute performance gains of 5.6%\u201310.7% for MCQs and 8.1%\u201310.2% for the top diagnosis in cases across all models. For MCQs, Qwen-235B achieved the highest accuracy of 87.3% (vs. 81.7% baseline) using the Plain RAG configuration with Cleaned (TOC-aligned) Hybrid retrieval. Llama-70B followed with 83.6% in the same configuration. For case vignettes, Qwen-235B achieved a correct top diagnosis rate of 66.3% and a correct diagnosis rate within the top 5 differential diagnosis lists of 90.8% using Cleaned Hybrid retrieval configurations. Hybrid retrieval (Dense + Sparse) consistently surpassed Dense-only methods. Notably, while larger models benefited from Cleaned text, smaller models (e.g., Qwen-14B) achieved higher top diagnosis rates with Uncleaned text (57.1% vs. 51.0%), suggesting a dependency on redundant context in lower-parameter settings. Conclusion RAG significantly enhances knowledge performance of open-source LLMs in sleep medicine. Hybrid retrieval and curated, TOC-aligned knowledge bases yield optimal results for large models, whereas smaller models benefit from the redundancy of uncleaned text. These findings suggest that RAG systems can augment LLMs in domain specific knowledge for clinical decision support. Support (if any) Authors: Joseph Cheung, Pengze Li, Anshum Patel, SaiKrishna Vallamchetla, Het Contractor, Hayden Heninger, Cui Tao"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.0,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -355,7 +355,7 @@
     "ground_truth_doc_ids": [
       "10.32473/flairs.39.1.141782"
     ],
-    "answer": "Mental health conditions affect over one billion individuals globally and remain challenging to assess accurately due to fragmented clinical data and subjective evaluation methods.",
+    "answer": "The paper finds that structured context handling and agentic refinement consistently improve responses in mental health-oriented language models, enhancing medical accuracy, empathy, completeness, and safety. This indicates that Agentic Context Engineering (ACE) can lead to improved reasoning depth and patient-centered response quality.",
     "retrieved_doc_ids": [
       "10.32473/flairs.39.1.141782",
       "10.63646/kpqm1958",
@@ -369,10 +369,10 @@
       "A Survey of (Deep RAG) Deep Retrieval Augmented Generation and Reasoning in Large Language Models. Retrieval-Augmented Generation (RAG) has emerged as a powerful paradigm for combining large language models with external knowledge sources to produce accurate, context-aware, and verifiable outputs. In this survey, we focus on an advanced instantiation of this paradigm, referred to as Deep RAG, which integrates reasoning, memory, and multi-step planning into end-to-end research workflows. We provide a structured overview of Deep RAG systems, covering key components such as query planning, information retrieval, memory management, and answer generation, as well as practical optimization techniques including supervised fine-tuning, iterative self-evolving, and agentic reinforcement learning. We analyze different planning strategies, adaptive retrieval mechanisms, conflict resolution methods, and multimodal synthesis, highlighting both their strengths and limitations. By categorizing approaches according to workflow types, reasoning strategies, and optimization paradigms, we clarify the current landscape and identify open challenges for evaluation, scalability, and multimodal reasoning. This survey aims to provide a comprehensive roadmap for designing flexible, reliable, and intelligent Deep RAG systems capable of performing complex, real-world research tasks with minimal human supervision. Authors: Lihui Liu"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.10169491525423728,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -384,7 +384,7 @@
     "ground_truth_doc_ids": [
       "10.32473/flairs.39.1.141782"
     ],
-    "answer": "Khoa Pham, Jiacheng Li, Hassan S. Al Khatib, Shahram Rahimi, Noorbakhsh Amiri Golilarz, Andy Perkins",
+    "answer": "The paper 'An Exploratory Study of Agentic Retrieval Augmented Generation for Mental Health Oriented Language Models' was authored by Khoa Pham, Jiacheng Li, Hassan S. Al Khatib, Shahram Rahimi, Noorbakhsh Amiri Golilarz, and Andy Perkins.",
     "retrieved_doc_ids": [
       "10.32473/flairs.39.1.141782",
       "10.63646/kpqm1958",
@@ -398,9 +398,9 @@
       "Does retrieval-augmented generation impact medical students\u2019 perceptions of large language models? (Preprint). BACKGROUND There is evidence of rapid adoption of large language models (LLMs) in undergraduate medical education, with medical students using it to support their learning. This raises concerns particularly around the accuracy of LLM-generated information students are learning. Retrieval-augmented generation (RAG), which grounds a LLM in curated materials, may be a strategy to improve their accuracy. OBJECTIVE This study investigates if grounding LLM outputs in verifiable sources using RAG impacts trust and perceived usability amongst medical students. METHODS In a four-month qualitative study, second-year medical students at Bristol Medical School used a RAG-enabled LLM (NotebookLM) to help them learn course content. Following this, their perspectives were explored using a focus group and survey was. Qualitative data was analysed using thematic analysis and was supplemented by Likert scale data. RESULTS RAG-based LLMs were perceived as more reliable than standard LLM responses mainly due to the transparency of and control over information sources. The system functioned as an accessible, on-demand learning resource, improving efficiency and supporting self-directed study. Students continued to use strategies to cross check generated information. They demonstrated some awareness of ethical concerns, mostly around the environmental impact of LLMs and data privacy. CONCLUSIONS These findings suggest that RAG may enhance students\u2019 trust in LLM outputs while maintaining their benefit as a flexible \u2018study partner\u2019. It highlights RAG as a strategy that educators can use to support students who use LLMs in the context of increasing. However, the impact of RAG-based LLMs over a longer period and on learning outcomes requires further evaluation. Authors: Rohin Athavale, Alexander Cresswell, Alice Huffman"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.5599999999999999,
     "judge": {
-      "score": 5,
+      "score": 3,
       "correct": true,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
@@ -413,7 +413,7 @@
     "ground_truth_doc_ids": [
       "10.32473/flairs.39.1.141782"
     ],
-    "answer": "2026-05-06",
+    "answer": "The provided excerpts do not contain the publication date for 'An Exploratory Study of Agentic Retrieval Augmented Generation for Mental Health Oriented Language Models'.",
     "retrieved_doc_ids": [
       "10.32473/flairs.39.1.141782",
       "10.63646/kpqm1958",
@@ -427,10 +427,10 @@
       "Does retrieval-augmented generation impact medical students\u2019 perceptions of large language models? (Preprint). BACKGROUND There is evidence of rapid adoption of large language models (LLMs) in undergraduate medical education, with medical students using it to support their learning. This raises concerns particularly around the accuracy of LLM-generated information students are learning. Retrieval-augmented generation (RAG), which grounds a LLM in curated materials, may be a strategy to improve their accuracy. OBJECTIVE This study investigates if grounding LLM outputs in verifiable sources using RAG impacts trust and perceived usability amongst medical students. METHODS In a four-month qualitative study, second-year medical students at Bristol Medical School used a RAG-enabled LLM (NotebookLM) to help them learn course content. Following this, their perspectives were explored using a focus group and survey was. Qualitative data was analysed using thematic analysis and was supplemented by Likert scale data. RESULTS RAG-based LLMs were perceived as more reliable than standard LLM responses mainly due to the transparency of and control over information sources. The system functioned as an accessible, on-demand learning resource, improving efficiency and supporting self-directed study. Students continued to use strategies to cross check generated information. They demonstrated some awareness of ethical concerns, mostly around the environmental impact of LLMs and data privacy. CONCLUSIONS These findings suggest that RAG may enhance students\u2019 trust in LLM outputs while maintaining their benefit as a flexible \u2018study partner\u2019. It highlights RAG as a strategy that educators can use to support students who use LLMs in the context of increasing. However, the impact of RAG-based LLMs over a longer period and on learning outcomes requires further evaluation. Authors: Rohin Athavale, Alexander Cresswell, Alice Huffman"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.0,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -442,7 +442,7 @@
     "ground_truth_doc_ids": [
       "10.36227/techrxiv.177272838.89432844/v1"
     ],
-    "answer": "Retrieval-Augmented Generation (RAG) has emerged as a powerful paradigm for combining large language models with external knowledge sources to produce accurate, context-aware, and verifiable outputs.",
+    "answer": "This paper provides a structured overview of Deep RAG systems, integrating reasoning, memory, and multi-step planning into end-to-end research workflows, and offers a roadmap for designing flexible, reliable, and intelligent Deep RAG systems.",
     "retrieved_doc_ids": [
       "10.36227/techrxiv.177272838.89432844/v1",
       "10.70121/001c.158711",
@@ -456,10 +456,10 @@
       "Hybrid Graph Neural Network and Large Language Model Framework for Robust Knowledge Graph Question Answering via Retrieval-Augmented Generation. Knowledge graphs (KGs) hold facts about the world as connected triples, and they have become a backbone for any system that needs to reason over linked information. The task of Knowledge Graph Question Answering (KGQA) is to map a natural-language question onto the right entity, or set of entities, somewhere inside such a graph. Two communities have been pulling at this problem from opposite ends. Large language models (LLMs) read a question fluently but tend to invent facts and stumble on multi-hop chains they cannot verify. Graph neural networks (GNNs), on the other side, are good at walking through neighbourhoods and weighing relations, but cannot phrase an answer the way a person would. In this work, we describe a practical hybrid that places the two inside a retrieval- augmented generation (RAG) loop. A GNN first prunes a small subgraph around the question's seed entities and ranks candidate answers; we then extract shortest paths between the seeds and the top candidates, score each path with a lightweight function that combines GNN attention with degree centrality, and finally verbalise the surviving paths into plain-English sentences before passing them to a 7-8B open-source LLM. The proposed entity-priority scoring step is training-free and runs in milliseconds, yet it lifts Hits@1 by roughly 4-5 percentage points on the harder questions of ComplexWebQuestions. Experiments on WebQuestionsSP and ComplexWebQuestions show competitive or superior results against recent baselines, with the largest gains on multi-entity and three-or-more hop queries. The pipeline uses about one LLM call per question, runs comfortably on a single mid-range GPU, and exposes its reasoning as a short list of human-readable paths that anyone can audit. We argue that this combination of grounded retrieval, lightweight path scoring, and modest model size makes the approach particularly suited to academic and resourceconstrained settings. Authors: Sohail Khan"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.1132075471698113,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -471,7 +471,7 @@
     "ground_truth_doc_ids": [
       "10.36227/techrxiv.177272838.89432844/v1"
     ],
-    "answer": "Lihui Liu",
+    "answer": "Lihui Liu authored the paper 'A Survey of (Deep RAG) Deep Retrieval Augmented Generation and Reasoning in Large Language Models'.",
     "retrieved_doc_ids": [
       "10.36227/techrxiv.177272838.89432844/v1",
       "10.22214/ijraset.2026.82233",
@@ -485,10 +485,10 @@
       "Speculative Retrieval-Augmented Generation for Cost-Efficient Large Language Model Inference. Abstract - This work focuses on the two crucial bottlenecks in Retrieval-Augmented Generation (RAG): high inference latency and expensive computation cost. RAG enhances the factual correctness of Large Language Models (LLMs) by utilizing external knowledge sources; However, the auto-To achieve a good recall, the system applies a two-way retrieval mechanism: Dense retrieval: This module uses BAAI/bge-small-en-v1.5 to create a 384-dimensional embedding space, where queries and documents are mapped. The embeddings are stored in a FAISS IndexFlatL2. Sparse retrieval: This module uses TF-IDF vectorization to capture an exact keyword match. Reranking: A simple heuristic mechanism of matching substrings of the query terms in the documents selected to perform the final step of ranking them for prompt introduce a novel speculative RAG framework that combines hybrid retrieval with speculative decoding. Our framework employs hybrid dense vector search (BGE-small) and sparse keyword search (TF-IDF) for enhanced recall followed by a lightweight re-ranker model. A compact draft model (TinyLlama-1.1B) makes tentative future token generation, then a larger verifier model (Mistral-7B) checks the correctness of the candidate token. Empirical experiments demonstrate 33% and 29% improvement in inference latency and token reduction, respectively, compared to the baseline of a typical 7B model, while retaining 94% accuracy on factoid tasks. Key Words: Retrieval-Augmented Generation, Speculative Decoding, Large Language Models, Inference Optimization, Hybrid Retrieval Authors: Dr. Sumalatha P, Manoj Kumar"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.18181818181818182,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
@@ -500,7 +500,7 @@
     "ground_truth_doc_ids": [
       "10.36227/techrxiv.177272838.89432844/v1"
     ],
-    "answer": "2026-03-05",
+    "answer": "The provided excerpts do not contain publication dates for either paper.",
     "retrieved_doc_ids": [
       "10.36227/techrxiv.177272838.89432844/v1",
       "10.70121/001c.158711",
@@ -514,10 +514,10 @@
       "Hybrid Graph Neural Network and Large Language Model Framework for Robust Knowledge Graph Question Answering via Retrieval-Augmented Generation. Knowledge graphs (KGs) hold facts about the world as connected triples, and they have become a backbone for any system that needs to reason over linked information. The task of Knowledge Graph Question Answering (KGQA) is to map a natural-language question onto the right entity, or set of entities, somewhere inside such a graph. Two communities have been pulling at this problem from opposite ends. Large language models (LLMs) read a question fluently but tend to invent facts and stumble on multi-hop chains they cannot verify. Graph neural networks (GNNs), on the other side, are good at walking through neighbourhoods and weighing relations, but cannot phrase an answer the way a person would. In this work, we describe a practical hybrid that places the two inside a retrieval- augmented generation (RAG) loop. A GNN first prunes a small subgraph around the question's seed entities and ranks candidate answers; we then extract shortest paths between the seeds and the top candidates, score each path with a lightweight function that combines GNN attention with degree centrality, and finally verbalise the surviving paths into plain-English sentences before passing them to a 7-8B open-source LLM. The proposed entity-priority scoring step is training-free and runs in milliseconds, yet it lifts Hits@1 by roughly 4-5 percentage points on the harder questions of ComplexWebQuestions. Experiments on WebQuestionsSP and ComplexWebQuestions show competitive or superior results against recent baselines, with the largest gains on multi-entity and three-or-more hop queries. The pipeline uses about one LLM call per question, runs comfortably on a single mid-range GPU, and exposes its reasoning as a short list of human-readable paths that anyone can audit. We argue that this combination of grounded retrieval, lightweight path scoring, and modest model size makes the approach particularly suited to academic and resourceconstrained settings. Authors: Sohail Khan"
     ],
     "retrieval_hit": true,
-    "token_f1": 1.0,
+    "token_f1": 0.0,
     "judge": {
-      "score": 5,
-      "correct": true,
+      "score": 1,
+      "correct": false,
       "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   }

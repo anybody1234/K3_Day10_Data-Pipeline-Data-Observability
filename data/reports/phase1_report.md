@@ -14,9 +14,9 @@
 |--------|-------|
 | `samples` | 18 |
 | `retrieval_hit_rate` | 1.0000 |
-| `mean_token_f1` | 1.0000 |
-| `judge_accuracy` | 1.0000 |
-| `mean_judge_score` | 5 |
+| `mean_token_f1` | 0.1460 |
+| `judge_accuracy` | 0.0556 |
+| `mean_judge_score` | 1.1111 |
 
 > RAGAS: Set RUN_RAGAS=1 to enable the slower Ragas pass.
 
